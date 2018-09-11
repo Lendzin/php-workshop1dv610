@@ -40,18 +40,6 @@ class Translate {
 
 		
 		$this->input->setUserInput($reversedText);
-			$reversedText = "Your translated text is: ";
-
-			if(strlen($originalText) == 0) {
-  			$reversedText = "No text enterered!";
-		}
-
-		for ($i = 1; $i <= strlen($originalText); $i++) {
-  			$reversedText .= $originalText[strlen($originalText) - $i];
-		}
-
-		
-		$this->input->setUserInput($reversedText);
 		}
 		return $this->view->show();
 	}
